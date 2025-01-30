@@ -12,7 +12,7 @@ function App() {
     const newIdea = { title, description, category };
 
     try {
-      await axios.post('http://localhost:3000/ideas', newIdea);
+      await axios.post('http://localhost:3000ideas', newIdea);
       alert('Ideia enviada com sucesso!');
     } catch (err) {
       alert('Erro ao enviar a ideia');
